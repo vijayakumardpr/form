@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.left-navbar {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-1000px);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.left-navbar--links {
+  width: 40%;
+  height: 100vh;
+  background-color: #718355;
+  padding-top: 15px;
+}
+
+.left-navbar--link {
+  padding-left: 0;
+  list-style: none;
+  font-weight: bold;
+}
+
+.left-navbar--link li {
+  margin: 16px 0;
+  padding: 15px 15px;
+}
+
+.left-navbar--link li:hover {
+  background-color: #87986a;
+}
+
+.left-navbar--link li a {
+  text-decoration: none;
+  color: initial;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.show {
+  transform: translateX(0px);
+  visibility: unset;
+  opacity: 1;
+}
+
+.bi-x-lg {
+  font-size: 1.25rem;
+  padding: 15px;
+}
+
+.bi-list {
+  font-size: 1.5rem;
+}
+
+.bi-x-lg,
+.bi-list {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header {
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #87986a;
+}
+
+.company-logo {
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(./images/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.price {
+  color: rgba(255, 255, 255, 1);
+}
+
+.form-title {
+  text-align: center;
+  margin: 0;
+}
+
+.form {
+  padding: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 1);
+}
+
+.form-field {
+  padding: 0 0 12px 12px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: "Lato", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1.2px;
+}
+
+.submit {
+  background-color: #718355;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 1em 1.25em;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1.25px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price {
+    width: 40%;
+  }
+  .form {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .main {
+    margin: 0 auto;
+  }
+  .hero {
+    justify-content: center;
+  }
+
+  .form {
+    max-width: 350px;
+  }
+}
