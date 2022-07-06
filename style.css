@@ -75,11 +75,25 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #87986a;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .company-logo {
   margin: 0;
+}
+
+.phone-number {
+  margin: 0;
+}
+
+.whatsapp {
+  text-decoration: none;
+  color: black;
+}
+
+.bi-whatsapp {
+  color: green;
 }
 
 .hero {
@@ -89,9 +103,10 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(./images/4.jpg);
+    url(./images/selftax.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 45%;
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -126,7 +141,7 @@ body {
 }
 
 .submit {
-  background-color: #718355;
+  background-color: rgba(0, 0, 0, 0.9);
   outline: none;
   border: none;
   color: #fff;
